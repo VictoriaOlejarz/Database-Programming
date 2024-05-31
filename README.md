@@ -7,4 +7,4 @@
 - Relational Table Details
 - Relational Schema
 
-/document_sephora.pdf
+document_sephora.pdf
