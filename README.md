@@ -1,4 +1,4 @@
-# Database Programming
+# Database Programming (PostreSQL, SQLalchemy/Python)
 
 ## Creating a database based on the cosmetic/beauty store Sephora.
 ## Database Document including:
