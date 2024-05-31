@@ -1,0 +1,242 @@
+﻿CREATE TABLE brands (
+    bID VARCHAR(50) primary key,
+    bName VARCHAR(50),
+    bContact VARCHAR(50)
+);
+
+
+INSERT INTO brands(bID, bName, bContact)
+VALUES
+('0001', 'Rare Beauty', 'rarebeautyrep@gmail.com'),
+('0002', 'Kosas', 'kosasrep@gmail.com'),
+('0003', 'Fenty ', 'fentyrep@gmail.com'),
+('0004', 'Dry Bar ', 'drybarrep@gmail.com'),
+('0005', 'The Ordinary ', 'theordinaryrep@gmail.com'),
+('0006', 'Drunk Elephant ', 'drunkelephantrep@gmail.com'),
+('0007', 'Olaplex', 'olaplexrep@gmail.com'),
+('0008', 'Amika', 'amikarep@gmail.com'),
+('0009', 'Glow Recipe', 'glowreciperep@gmail.com')
+;
+
+
+
+
+
+
+CREATE TABLE categories (
+    cID VARCHAR(50) PRIMARY KEY,
+    cName VARCHAR(50)
+);
+
+
+INSERT INTO categories(cID, cName)
+VALUES
+('111', 'MakeUp'),
+('222', 'SkinCare'),
+('333', 'HairCare');
+
+
+
+
+
+
+CREATE TABLE products (
+    pID VARCHAR(50) PRIMARY KEY,
+    pName VARCHAR(100),
+    pType VARCHAR(100),
+    pPrice numeric,
+    pVariation VARCHAR(50),
+    bID VARCHAR(50),
+    cID VARCHAR(50),
+    FOREIGN KEY (bID) REFERENCES brands(bID),
+    FOREIGN KEY (cID) REFERENCES categories(cID)
+);
+
+
+INSERT INTO products(pID, pName, pType, pPrice, pVariation, bID, cID)
+VALUES
+('12345', 'Soft Pinch Liquid', 'Blush', '23', '9', '0001', '111'),
+('23456', 'Liquid Touch Brightening', 'Concealer', '22', '43', '0001', '111'),
+('73927', 'Perfect Strokes Volumizing', 'Mascara', '20', '1', '0001', '111'),
+('27369', 'Kind Words Matte', 'Lipstick', '20', '10', '0001', '111'),
+('24623', 'Revealer Super Creamy + Brightening', 'Concealer', '30', '38', '0002', '111'),
+('29348', 'Revealer Skin-Improving Foundation SPF 25 with Hyaluronic Acid and Niacinamide', 'Foundation', '42', '36', '0002', '111'),
+('28362', 'Big Clean Longwear Volumizing + Lash Care Mascara', 'Mascara', '26', '1', '0002', '111'),
+('67842', 'Weightless Lip Color Nourishing Satin Lipstick', 'Lipstick', '26', '10', '0002', '111'),
+('23543', 'Cheeks Out Freestyle Cream Blush', 'Blush', '25', '11', '0003', '111'),
+('96876', 'Pro Filt’r Soft Matte Longwear Liquid Foundation', 'Foundation', '40', '53', '0003', '111'),
+('48756', 'Snap Shadows Mix & Match Eyeshadow Palette', 'Eyeshadow', '30', '1', '0003', '111'),
+('35543', 'Brow MVP Ultra Fine Brow Pencil & Styler', 'Brow', '25', '14', '0003', '111'),
+('98756', 'Seltzer Spritz Flexible Hold Hairspray', 'Hairspray', '31', '1', '0004', '333'),
+('23565', 'Liquid Glass Smoothing Shampoo', 'Shampoo', '29', '1', '0004', '333'),
+('75386', 'Blonde Ale Brightening Conditioner', 'Conditioner', '29', '1', '0004', '333'),
+('34624', 'Detox Gentle Dry Shampoo Sensitive Scalp', 'Dry Shampoo', '28', '1', '0004', '333'),
+('85765', 'Glucoside Foaming Cleanser', 'Face Wash', '12.5', '1', '0005', '222'),
+('65234', 'Natural Moisturizing Factors + HA', 'Moisturizer', '14', '1', '0005', '222'),
+('76476', 'Hyaluronic Acid 2% + B5 Hydrating Serum', 'Serum', '17.5', '1', '0005', '222'),
+('23587', 'Niacinamide 10% + Zinc 1% Oil Control Serum', 'Serum', '10.8', '1', '0005', '222'),
+('14345', 'Beste™ No. 9 Jelly Cleanser', 'Face Wash', '34', '1', '0006', '222'),
+('45673', 'Lala Retro™ Nourishing Whipped Refillable Moisturizer', 'Moisturizer', '62', '1', '0006', '222'),
+('12543', 'A-Passioni™ Retinol Cream', 'Retinol', '74', '1', '0006', '222'),
+('54778', 'B-Hydra™ Intensive Hydration Serum with Hyaluronic Acid', 'Serum', '41', '1', '0006', '222'),
+('23564', 'No. 4 Bond Maintenance™ Shampoo', 'Shampoo', '30', '1', '0007', '333'),
+('54576', 'No. 5 Bond Maintenance™ Conditioner', 'Conditioner', '30', '1', '0007', '333'),
+('97753', 'No. 3 Hair Repair Perfector', 'Hair Masque', '60', '1', '0007', '333'),
+('45319', 'No. 7 Bonding Hair Oil', 'Hair Oil', '30', '1', '0007', '333'),
+('32654', 'Top Gloss Hair Shine Spray', 'Hair Spray', '29', '1', '0008', '333'),
+('45457', 'Normcore Sulfate Free Shampoo', 'Shampoo', '38', '1', '0008', '333'),
+('34654', 'Perk Up Talc-Free Dry Shampoo', 'Dry Shampoo', '28', '1', '0008', '333'),
+('86954', 'Soulfood Nourishing Hair Mask', 'Hair Mask', '34', '1', '0008', '333'),
+('45365', 'Avocado Ceramide Moisture Barrier Cleanser', 'Face Wash', '28', '1', '0009', '222'),
+('32522', 'Watermelon Pink Juice Oil-Free Refillable Moisturizer', 'Moisturizer', '40', '1', '0009', '222'),
+('77654', 'Cloudberry Bright Essence Toner', 'Toner', '38', '1', '0009', '222'),
+('54744', 'Pomegranate Peptide Firming Serum', 'Serum', '45', '1', '0009', '222'),
+('24186', 'Stay Vulnerable Melting Cream Blush', 'Blush', 22, '5', '0001', '111'), 
+('23621', 'Positive Liquid Light Luminizer', 'Blush', 25, '8', '0001', '111'), 
+('99623', 'Airbrow', 'Brow', 24, '10', '0002', '111'), 
+('27375', 'BB Burst Tinted Moisturizer', 'Foundation', 38, '24', '0002', '111'), 
+('27969', 'Shadowstix Longwear Eyeshadow Stick', 'Eyeshadow', 25, '16', '0003', '111'), 
+('28457', 'Diamond Bomb All-Over Diamond Veil', 'Highlighter', 42, '2', '0003', '111'), 
+('36829', 'Killawatt Freestyle Highligher', 'Highlighter', 40, '7', '0003', '111'), 
+('26818', 'Shiny Sheer Lipstick', 'Lipstick', 24, '12', '0002', '111'), 
+('66335', 'Protini Polypeptide Firming Moisturizer', 'Moisturizer', 68, '1', '0006', '222'), 
+('33939', 'Bora Barrier Rich Repair Cream', 'Moisturizer', 69, '1', '0006', '222'), 
+('77823', 'The Kure Bind Repair Shampoo for Damaged Hair', 'Shampoo', 44, '1', '0008', '333'), 
+('70345', 'Dream Routine Overnight Hydrating Hair Mask', 'Hair Mask', 32, '1', '0008', '333'), 
+('48468', 'Watermelon Glow Niacinamide Dew Drops', 'Serum', 49, '1', '0009', '222'), 
+('35128', 'Plum Plump Refillable Hyaluronic Acid Moisturizer', 'Moisturizer', 40, '1', '0009', '222'), 
+('78842', 'The Kure Bind Repair Conditioner for Damaged Hair', 'Conditioner', 44, '1', '0008', '333'), 
+('63524', 'Final Call Friz & Static Control Mist', 'Hair Spray', 29, '1', '0004', '333'), 
+('38121', '3-in-1 Finishing Spray', 'Hair Spray', 29, '1', '0004', '333');
+
+
+
+
+
+
+CREATE TABLE specialize (
+    bID VARCHAR(50),
+    cID VARCHAR(50),
+    PRIMARY KEY (bID, cID),
+    FOREIGN KEY (bID) REFERENCES brands(bID),
+    FOREIGN KEY (cID) REFERENCES categories(cID));
+
+
+INSERT INTO specialize (bID, cID)
+VALUES
+('0001', '111'),
+('0002', '222'),
+('0003', '111'),
+('0004', '333'),
+('0005', '222'),
+('0006', '222'),
+('0007', '333'),
+('0008', '333'),
+('0009', '222');
+
+
+
+
+
+
+CREATE TABLE locations (
+    storeID VARCHAR(50) PRIMARY KEY,
+    Laddress VARCHAR(50),
+    Lphone NUMERIC,
+    mgrID VARCHAR(50)
+);
+
+
+INSERT INTO locations (storeID, Laddress, Lphone, mgrID)
+VALUES
+('001', '123 Chicago, IL 60660', 1234567890, '101'),
+('002', '222 New York, NY 10001', 9876543210, '201'),
+('003', '789 Los Angeles, CA 90009', 2718843621, '301'),
+('004', '909 Seattle, WA 98109', 9234071938, '401');
+
+
+
+
+
+
+CREATE TABLE employees (
+    eID VARCHAR(50) PRIMARY KEY,
+    eName VARCHAR(50),
+    eSalary NUMERIC,
+    eTitle VARCHAR(50),
+    storeID VARCHAR(50),
+    FOREIGN KEY (storeID) REFERENCES locations(storeID)
+);
+
+
+INSERT INTO employees (eID, eName, eSalary, eTitle, storeID)
+VALUES
+('101', 'Keren Madhur', 82000, 'manager', '001'),
+('102', 'Lamis Hugo', 20000, 'sales associate', '001'),
+('103', 'Bose Zoriana', 25000, 'sales associate', '001'),
+('104', 'Vittore Isobel', 30000, 'sales associate', '001'),
+('201', 'Carlota Andromache', 84000, 'manager', '002'),
+('202', 'Isi Adrian', 28000, 'sales associate', '002'),
+('203', 'Hendrikus Mislav', 40000, 'sales associate', '002'),
+('204', 'Wambli Xolotl', 32000, 'sales associate', '002'),
+('301', 'Edgardo Stephano', 83000, 'manager', '003'),
+('302', 'Serapion Rakel', 39000, 'sales associate', '003'),
+('303', 'Anka Sandhya', 24000, 'sales associate', '003'),
+('304', 'Manas Felicitas', 19000, 'sales associate', '003'),
+('401', 'Atlas Hasmik', 90000, 'manager', '004'),
+('402', 'Ortwin Heraclitus', 47000, 'sales associate', '004'),
+('403', 'Yseut Aisopos', 31000, 'sales associate', '004'),
+('404', 'Jun Kinich', 44000, 'sales associate', '004');
+
+
+
+
+
+
+CREATE TABLE carry (
+    bID VARCHAR(50),
+    storeID VARCHAR(50),
+    PRIMARY KEY (bID, storeID),
+    FOREIGN KEY (bID) REFERENCES brands(bID),
+    FOREIGN KEY (storeID) REFERENCES locations(storeID)
+);
+
+
+INSERT INTO carry (bID, storeID)
+VALUES
+('0001', '003'),
+('0002', '003'),
+('0003', '003'),
+('0004', '003'),
+('0005', '003'),
+('0006', '003'),
+('0007', '003'),
+('0008', '003'),
+('0009', '003'),
+('0001', '002'),
+('0002', '002'),
+('0003', '002'),
+('0004', '002'),
+('0005', '002'),
+('0006', '002'),
+('0007', '002'),
+('0008', '002'),
+('0009', '002'),
+('0002', '004'),
+('0003', '004'),
+('0004', '004'),
+('0006', '004'),
+('0008', '004'),
+('0009', '004'),
+('0001', '001'),
+('0002', '001'),
+('0004', '001'),
+('0005', '001'),
+('0006', '001'),
+('0007', '001'),
+('0009', '001');
+
+
+
+
+________________
