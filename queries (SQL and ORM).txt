@@ -1,0 +1,23 @@
+﻿Query #1 (ManagerAtLocation) 
+managers_at_locations = 
+(session.query(Location, Employee)
+.join(Employee, Location.mgrid == Employee.id))
+
+
+for location, employee in managers_at_locations:
+    print(f"Location Address: {location.laddress}\nManager: {employee.ename}\nManager ID: {location.mgrid}\n")
+
+
+  
+
+
+
+Query #2: Average Product Price 
+For each location, print the average price of the products that are carried at those locations. Sort the output by the location storeID in ascending order.
+
+
+SELECT l.Laddress, l.storeid, AVG(p.pPrice) AS AveragePrice
+FROM locations l, carry c, products p
+WHERE l.storeID = c.storeID AND c.bID = p.bID
+GROUP BY l.storeid
+order by l.storeid asc;
