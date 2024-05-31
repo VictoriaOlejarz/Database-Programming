@@ -7,5 +7,5 @@
 - Relational Table Details
 - Relational Schema
 
-[document_sephora.pdf](https://github.com/user-attachments/files/15517261/document_sephora.pdf)
+[[document_sephora.pdf](https://github.com/user-attachments/files/15517261/document_sephora.pdf)](https://github.com/VictoriaOlejarz/Database-Programming/blob/main/docs/document_sephora.pdf)
 
