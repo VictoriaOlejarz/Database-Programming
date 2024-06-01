@@ -17,6 +17,7 @@ https://github.com/VictoriaOlejarz/Database-Programming/blob/main/docs/ORM_scrip
 
 ## Queries
 
+https://github.com/VictoriaOlejarz/Database-Programming/tree/main/queries
 
 
 
