@@ -7,7 +7,7 @@
 - Relational Table Details
 - Relational Schema
 
-ad doc
+[Project Intro](https://github.com/VictoriaOlejarz/Database-Programming/tree/main/intro)
 
 ## DDL + DML + SQL Script
 https://github.com/VictoriaOlejarz/Database-Programming/blob/main/docs/sql_script.txt
