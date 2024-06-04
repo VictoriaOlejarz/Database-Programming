@@ -59,7 +59,17 @@ https://github.com/VictoriaOlejarz/Database-Programming/blob/main/docs/ORM_scrip
 
 ## Queries
 
-https://github.com/VictoriaOlejarz/Database-Programming/tree/main/queries
+#1. For each location, print the average price of the products that are carried at those locations. 
+Sort the output by the location storeID in ascending order.
+
+[Query #1 - SQL](https://github.com/VictoriaOlejarz/Database-Programming/blob/main/docs/q2.jpeg)
+
+#2.
+
+For each location, print the location address, the manager name, and manager ID number. 
+
+[Query #2 - ORM](https://github.com/VictoriaOlejarz/Database-Programming/blob/main/docs/q1.jpeg)
+
 
 
 Phase Leader:			Victoria Olejarz 
