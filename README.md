@@ -52,10 +52,10 @@ The relational schema given in Section 5.1 was mapped into the following tables 
 
 
 ## DDL + DML + SQL Script
-https://github.com/VictoriaOlejarz/Database-Programming/blob/main/docs/sql_script.txt
+[SQL Script](https://github.com/VictoriaOlejarz/Database-Programming/blob/main/docs/sql_script.txt)
 
 ## ORM Implementation
-https://github.com/VictoriaOlejarz/Database-Programming/blob/main/docs/ORM_script.txt
+[Python Script](https://github.com/VictoriaOlejarz/Database-Programming/blob/main/docs/ORM_script.txt)
 
 ## Queries
 
@@ -68,7 +68,7 @@ Sort the output by the location storeID in ascending order.
 
 For each location, print the location address, the manager name, and manager ID number. 
 
-[Query #2 - ORM](https://github.com/VictoriaOlejarz/Database-Programming/blob/main/docs/q1.jpeg)
+[Query #2 - ORM/Python](https://github.com/VictoriaOlejarz/Database-Programming/blob/main/docs/q1.jpeg)
 
 
 
