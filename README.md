@@ -25,7 +25,7 @@ Brands make many products. Each brand has a unique brand identification number, 
 ## 3. ER Diagram
 The figure below shows the ER diagram of the SEPHORA Database (SEPHORA).
 
-https://github.com/VictoriaOlejarz/Database-Programming/blob/main/docs/ER.png
+[ER Diagram](https://github.com/VictoriaOlejarz/Database-Programming/blob/main/docs/ER.jpg)
 
 
 ## 4. ER Diagram Uncaptured Constraints
@@ -40,13 +40,14 @@ A variation will be a description of the product.
 ## 5. Relational Schema
 This section provides the relational schema with referential integrity and the relational table details.
 
+[Schema](https://github.com/VictoriaOlejarz/Database-Programming/blob/main/docs/schema.jpeg)
 
 
 5.2 Relational Table Details 
 
 The relational schema given in Section 5.1 was mapped into the following tables in the SEPHORA database. Primary keys have been underlined. Tables that have multiple attributes underlined represent composite keys.
 
-
+[Table](https://github.com/VictoriaOlejarz/Database-Programming/blob/main/docs/table.jpeg)
 
 
 
