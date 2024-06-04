@@ -25,6 +25,7 @@ Brands make many products. Each brand has a unique brand identification number, 
 ## 3. ER Diagram
 The figure below shows the ER diagram of the SEPHORA Database (SEPHORA).
 
+https://github.com/VictoriaOlejarz/Database-Programming/blob/main/docs/ER.png
 
 
 ## 4. ER Diagram Uncaptured Constraints
