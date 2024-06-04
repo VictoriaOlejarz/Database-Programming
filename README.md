@@ -62,3 +62,13 @@ https://github.com/VictoriaOlejarz/Database-Programming/blob/main/docs/ORM_scrip
 https://github.com/VictoriaOlejarz/Database-Programming/tree/main/queries
 
 
+Phase Leader:			Victoria Olejarz 
+
+Phase Recorder:		Olivia Pardo  
+
+Phase Checker:			Laura Gerardo	
+
+Technical Advisor:		Olivia Roeger  
+
+
+
