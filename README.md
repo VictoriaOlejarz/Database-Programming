@@ -6,7 +6,7 @@
 - Entity Relationship Diagram
 - Relational Schema
 - Relational Table Details
-- DDL + DML + SQL Script
+- DDL + DML + SQL and Python Script
 - SQL and ORM Queries
 
 
